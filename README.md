@@ -1,26 +1,25 @@
 something
 =========
 
-something
 Hi,
 
 Ticker is a Web-based project management and bug tracking system. The program is inspired by Trac, developed and maintained by Edgewall Software. Basically, the system admin creates project and assigns a Project Manager to it. The Project Manager can add Project members for the Project. It allows project members to raise tickets for the project they are assigned to.The tickets are assigned to the concerned project member. Project members can update a ticket and post comments for it.
 
 Features:
 
-User Registration
-User Authentication
-Project Management
-Ticket Management
+1.User Registration
+2.User Authentication
+3.Project Management
+4.Ticket Management
 
 Technologies Used:
 
-Language: Groovy 
-Framework: Grails(REST Services)
-UI Framework: Twitter Bootstrap
-UI MVC : Angular JS
-Database: Mysql
-OS: Ubuntu
+1.Language: Groovy 
+2.Framework: Grails(REST Services)
+3.UI Framework: Twitter Bootstrap
+4.UI MVC : Angular JS
+5.Database: Mysql
+6.OS: Ubuntu
 
 
 WEB SERVICES DESCRIPTION:
@@ -35,32 +34,38 @@ The Rest Services are as follows:
 
 Project Management:
 	The services for Project management are:
-Create Project
-Add Members to Project
-Update Project
-Get all Projects
-Get all members of a project
-Get a project By Id
-Get all registered users
+
+
+1.Create Project
+2.Add Members to Project
+3.Update Project
+4.Get all Projects
+5.Get all members of a project
+6.Get a project By Id
+7.Get all registered users
 
 
 
 
 Ticket Management:
 	The services for Ticket management are:
-Create Ticket
-Update Ticket
-Get all Tickets
-Get all Tickets for a Project
-Get all Tickets Assigned to User
-Get all tickets Created by user
-Get a Ticket By Id
-Get all Open Tickets for a Project
-Get all New Tickets for a Project
-Get all registered users
+
+
+1.Create Ticket
+2.Update Ticket
+3.Get all Tickets
+4.Get all Tickets for a Project
+5.Get all Tickets Assigned to User
+6.Get all tickets Created by user
+7.Get a Ticket By Id
+8.Get all Open Tickets for a Project
+9.Get all New Tickets for a Project
+10.Get all registered users
 
 History for Tickets:
 	The services for Ticket History are:
-Add history on every update of ticket
-Get history for a Ticket
-Get all history
+	
+	
+1.Add history on every update of ticket
+2.Get history for a Ticket
+3.Get all history
