@@ -1,0 +1,313 @@
+2013-10-04 18:12:17,287 [http-bio-8080-exec-1] INFO  controller.ProjectController  - project saved
+2013-10-04 18:13:39,751 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp] changed. Applying changes to application.
+2013-10-04 18:13:39,758 [Thread-9] INFO  ResourcesGrailsPlugin  - Scheduling reload of resource files due to change of file /home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp
+2013-10-04 18:13:40,259 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Performing a changed file reload
+2013-10-04 18:13:40,259 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Loading declared resources...
+2013-10-04 18:13:40,269 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Finished changed file reload
+2013-10-04 18:13:42,515 [http-bio-8080-exec-9] INFO  controller.UserController  - in user controller signin method
+2013-10-04 18:13:42,519 [http-bio-8080-exec-9] INFO  service.UserService  - in user service signin method
+2013-10-04 18:13:42,526 [http-bio-8080-exec-9] INFO  service.UserService  - user authenticated
+2013-10-04 18:13:43,559 [http-bio-8080-exec-4] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:13:43,564 [http-bio-8080-exec-4] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:13:43,618 [http-bio-8080-exec-4] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:13:43,623 [http-bio-8080-exec-4] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:14:23,423 [http-bio-8080-exec-11] INFO  controller.ProjectController  - in project controller save project method
+2013-10-04 18:14:23,449 [http-bio-8080-exec-11] INFO  service.ProjectService  - in project service save project method
+2013-10-04 18:14:23,465 [http-bio-8080-exec-6] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:14:23,472 [http-bio-8080-exec-8] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:14:23,473 [http-bio-8080-exec-6] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:14:23,480 [http-bio-8080-exec-8] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:14:23,585 [http-bio-8080-exec-11] INFO  controller.ProjectController  - project saved
+2013-10-04 18:15:48,834 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp] changed. Applying changes to application.
+2013-10-04 18:15:48,841 [Thread-9] INFO  ResourcesGrailsPlugin  - Scheduling reload of resource files due to change of file /home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp
+2013-10-04 18:15:49,343 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Performing a changed file reload
+2013-10-04 18:15:49,343 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Loading declared resources...
+2013-10-04 18:15:49,352 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Finished changed file reload
+2013-10-04 18:15:50,936 [http-bio-8080-exec-5] INFO  controller.UserController  - in user controller signin method
+2013-10-04 18:15:50,944 [http-bio-8080-exec-5] INFO  service.UserService  - in user service signin method
+2013-10-04 18:15:50,956 [http-bio-8080-exec-5] INFO  service.UserService  - user authenticated
+2013-10-04 18:15:53,064 [http-bio-8080-exec-6] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:15:53,076 [http-bio-8080-exec-6] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:15:53,093 [http-bio-8080-exec-10] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:15:53,099 [http-bio-8080-exec-10] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:16:42,398 [http-bio-8080-exec-4] INFO  controller.ProjectController  - in project controller save project method
+2013-10-04 18:16:42,423 [http-bio-8080-exec-4] INFO  service.ProjectService  - in project service save project method
+2013-10-04 18:16:42,433 [http-bio-8080-exec-11] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:16:42,441 [http-bio-8080-exec-7] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:16:42,441 [http-bio-8080-exec-11] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:16:42,454 [http-bio-8080-exec-7] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:16:42,638 [http-bio-8080-exec-4] INFO  controller.ProjectController  - project saved
+2013-10-04 18:17:33,906 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp] changed. Applying changes to application.
+2013-10-04 18:17:33,914 [Thread-9] INFO  ResourcesGrailsPlugin  - Scheduling reload of resource files due to change of file /home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp
+2013-10-04 18:17:34,415 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Performing a changed file reload
+2013-10-04 18:17:34,416 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Loading declared resources...
+2013-10-04 18:17:34,426 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Finished changed file reload
+2013-10-04 18:19:45,882 [http-bio-8080-exec-6] INFO  controller.UserController  - in user controller signin method
+2013-10-04 18:19:45,884 [http-bio-8080-exec-6] INFO  service.UserService  - in user service signin method
+2013-10-04 18:19:45,902 [http-bio-8080-exec-6] INFO  service.UserService  - user authenticated
+2013-10-04 18:19:47,424 [http-bio-8080-exec-1] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:19:47,430 [http-bio-8080-exec-1] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:19:47,501 [http-bio-8080-exec-1] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:19:47,506 [http-bio-8080-exec-1] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:20:09,911 [http-bio-8080-exec-1] INFO  controller.ProjectController  - in project controller save project method
+2013-10-04 18:20:09,932 [http-bio-8080-exec-1] INFO  service.ProjectService  - in project service save project method
+2013-10-04 18:20:09,938 [http-bio-8080-exec-9] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:20:09,944 [http-bio-8080-exec-8] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:20:09,945 [http-bio-8080-exec-9] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:20:09,949 [http-bio-8080-exec-8] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:20:10,135 [http-bio-8080-exec-1] INFO  controller.ProjectController  - project saved
+2013-10-04 18:26:22,200 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/services/com/neev/service/ProjectService.groovy] changed. Applying changes to application.
+2013-10-04 18:30:19,532 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp] changed. Applying changes to application.
+2013-10-04 18:30:19,538 [Thread-9] INFO  ResourcesGrailsPlugin  - Scheduling reload of resource files due to change of file /home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp
+2013-10-04 18:30:20,038 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Performing a changed file reload
+2013-10-04 18:30:20,039 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Loading declared resources...
+2013-10-04 18:30:20,048 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Finished changed file reload
+2013-10-04 18:31:55,597 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp] changed. Applying changes to application.
+2013-10-04 18:31:55,603 [Thread-9] INFO  ResourcesGrailsPlugin  - Scheduling reload of resource files due to change of file /home/neev-admin/NetBeansProjects/trac/web-app/gspPages/saveproject.gsp
+2013-10-04 18:31:56,104 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Performing a changed file reload
+2013-10-04 18:31:56,104 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Loading declared resources...
+2013-10-04 18:31:56,113 [pool-1-thread-1] INFO  resource.ResourceProcessor  - Finished changed file reload
+2013-10-04 18:33:55,672 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:34:17,047 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:34:32,342 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:37:47,754 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:39:48,131 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:42:12,551 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:45:12,905 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 18:45:18,990 [http-bio-8080-exec-7] INFO  controller.UserController  - in user controller signin method
+2013-10-04 18:45:19,003 [http-bio-8080-exec-7] INFO  service.UserService  - in user service signin method
+2013-10-04 18:45:19,021 [http-bio-8080-exec-7] INFO  service.UserService  - user authenticated
+2013-10-04 18:45:21,385 [http-bio-8080-exec-10] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:45:21,402 [http-bio-8080-exec-10] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:45:21,414 [http-bio-8080-exec-7] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:45:21,427 [http-bio-8080-exec-7] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:45:56,426 [http-bio-8080-exec-7] INFO  controller.ProjectController  - in project controller save project method
+2013-10-04 18:45:56,457 [http-bio-8080-exec-5] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 18:45:56,471 [http-bio-8080-exec-3] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 18:45:56,491 [http-bio-8080-exec-5] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 18:45:56,494 [http-bio-8080-exec-7] INFO  service.ProjectService  - in project service save project method
+2013-10-04 18:45:56,491 [http-bio-8080-exec-3] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 18:45:56,621 [http-bio-8080-exec-7] INFO  controller.ProjectController  - project saved
+2013-10-04 18:45:56,727 [http-bio-8080-exec-7] INFO  controller.ProjectController  - project memebers saved
+2013-10-04 18:48:30,361 [http-bio-8080-exec-11] INFO  controller.UserController  - in user controller adduser method
+2013-10-04 18:48:30,375 [http-bio-8080-exec-11] INFO  service.UserService  - in user Service adduser method
+2013-10-04 18:48:30,402 [http-bio-8080-exec-11] INFO  service.UserService  - User saved and sent mail
+2013-10-04 18:50:10,180 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 18:50:10,190 [http-bio-8080-exec-8] INFO  service.UserService  - in user service verifying account method
+2013-10-04 18:50:10,203 [http-bio-8080-exec-8] INFO  service.UserService  - user verified thru email
+2013-10-04 18:50:50,372 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 18:50:50,374 [http-bio-8080-exec-8] INFO  service.UserService  - in user service verifying account method
+2013-10-04 18:50:50,377 [http-bio-8080-exec-8] INFO  service.UserService  - user already active
+2013-10-04 18:51:06,112 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 18:51:06,113 [http-bio-8080-exec-8] INFO  service.UserService  - in user service verifying account method
+2013-10-04 18:51:06,116 [http-bio-8080-exec-8] INFO  service.UserService  - user already active
+2013-10-04 18:52:12,142 [http-bio-8080-exec-4] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 18:52:12,143 [http-bio-8080-exec-4] INFO  service.UserService  - in user service verifying account method
+2013-10-04 18:52:12,148 [http-bio-8080-exec-4] INFO  service.UserService  - user already active
+2013-10-04 18:54:24,355 [http-bio-8080-exec-6] INFO  controller.UserController  - in user controller logout method
+2013-10-04 18:54:28,501 [http-bio-8080-exec-6] INFO  controller.UserController  - in user controller logout method
+2013-10-04 18:55:50,302 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 18:55:50,346 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 18:55:52,012 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 18:55:52,021 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 18:57:48,558 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 18:57:48,586 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 18:57:49,552 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 18:57:49,558 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 18:57:58,582 [localhost-startStop-1] INFO  [localhost].[/trac]  - Initializing Spring root WebApplicationContext
+2013-10-04 18:58:08,956 [localhost-startStop-1] INFO  hibernate3.HibernatePluginSupport  - Set db generation strategy to 'update' for datasource DEFAULT
+2013-10-04 18:58:10,226 [localhost-startStop-1] INFO  cache.CacheBeanPostProcessor  - postProcessBeanDefinitionRegistry start
+2013-10-04 18:58:10,239 [localhost-startStop-1] INFO  cache.CacheBeanPostProcessor  - postProcessBeanFactory
+2013-10-04 18:58:12,127 [localhost-startStop-1] WARN  config.ConfigurationFactory  - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/neev-admin/.m2/repository/net/sf/ehcache/ehcache-core/2.4.6/ehcache-core-2.4.6.jar!/ehcache-failsafe.xml
+2013-10-04 18:58:15,632 [localhost-startStop-1] INFO  scaffolding.AbstractGrailsTemplateGenerator  - Scaffolding template generator set to use resource loader [org.codehaus.groovy.grails.commons.spring.GrailsWebApplicationContext@51f8e7f: startup date [Fri Oct 04 18:58:09 IST 2013]; parent: Root WebApplicationContext]
+2013-10-04 18:58:18,112 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Performing a full reload
+2013-10-04 18:58:18,396 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Loading resource declarations...
+2013-10-04 18:58:18,398 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Forgetting all known modules...
+2013-10-04 18:58:18,400 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Forgetting all known resources...
+2013-10-04 18:58:18,660 [localhost-startStop-1] WARN  module.ModuleDeclarationsFactory  - 'grails.resources.modules' in config does not define any modules
+2013-10-04 18:58:19,332 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Finished full reload
+2013-10-04 18:58:21,183 [localhost-startStop-1] INFO  databasemigration.MigrationRunner  - updateOnStart disabled for dataSource; not running migrations
+2013-10-04 18:58:21,231 [localhost-startStop-1] WARN  util.GrailsUtil  - [DEPRECATED] Method ApplicationHolder.getApplication() is deprecated and will be removed in a future version of Grails.
+2013-10-04 18:58:21,242 [localhost-startStop-1] WARN  util.GrailsUtil  - [DEPRECATED] Method ApplicationHolder.getApplication() is deprecated and will be removed in a future version of Grails.
+2013-10-04 18:58:21,344 [localhost-startStop-1] INFO  context.GrailsConfigUtils  - [GrailsContextLoader] Grails application loaded.
+2013-10-04 18:58:21,709 [localhost-startStop-1] INFO  [localhost].[/trac]  - Initializing Spring FrameworkServlet 'grails'
+2013-10-04 18:58:21,838 [main] INFO  http11.Http11Protocol  - Starting ProtocolHandler ["http-bio-8080"]
+2013-10-04 18:58:22,244 [http-bio-8080-exec-3] INFO  [localhost].[/trac]  - Initializing Spring FrameworkServlet 'gsp'
+2013-10-04 18:58:22,246 [http-bio-8080-exec-3] INFO  [localhost].[/trac]  - GSP servlet initialized
+2013-10-04 18:58:44,260 [http-bio-8080-exec-7] INFO  controller.UserController  - in user controller adduser method
+2013-10-04 18:58:44,347 [http-bio-8080-exec-7] INFO  service.UserService  - in user Service adduser method
+2013-10-04 18:58:44,737 [http-bio-8080-exec-7] INFO  service.UserService  - User saved and sent mail
+2013-10-04 18:59:10,681 [http-bio-8080-exec-4] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 18:59:10,695 [http-bio-8080-exec-4] INFO  service.UserService  - in user service verifying account method
+2013-10-04 18:59:10,723 [http-bio-8080-exec-4] INFO  service.UserService  - user verified thru email
+2013-10-04 19:08:53,972 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/UserController.groovy] changed. Applying changes to application.
+2013-10-04 19:10:13,199 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/conf/UrlMappings.groovy] changed. Applying changes to application.
+2013-10-04 19:11:10,450 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/conf/UrlMappings.groovy] changed. Applying changes to application.
+2013-10-04 19:12:19,695 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 19:13:17,341 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/ProjectController.groovy] changed. Applying changes to application.
+2013-10-04 19:13:50,776 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/services/com/neev/service/ProjectService.groovy] changed. Applying changes to application.
+2013-10-04 19:14:24,009 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/services/com/neev/service/ProjectService.groovy] changed. Applying changes to application.
+2013-10-04 19:14:36,388 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/controllers/com/neev/controller/UserController.groovy] changed. Applying changes to application.
+2013-10-04 19:14:36,835 [Thread-9] INFO  compiler.GrailsProjectWatcher  - File [/home/neev-admin/NetBeansProjects/trac/grails-app/services/com/neev/service/UserService.groovy] changed. Applying changes to application.
+2013-10-04 19:14:59,869 [http-bio-8080-exec-10] INFO  controller.UserController  - in user controller adduser method
+2013-10-04 19:14:59,899 [http-bio-8080-exec-10] INFO  service.UserService  - in user Service adduser method
+2013-10-04 19:14:59,989 [http-bio-8080-exec-10] INFO  service.UserService  - User saved and sent mail
+2013-10-04 19:16:16,574 [http-bio-8080-exec-5] INFO  controller.UserController  - in user controller verifying account method
+2013-10-04 19:16:16,588 [http-bio-8080-exec-5] INFO  service.UserService  - in user service verifying account method
+2013-10-04 19:16:16,604 [http-bio-8080-exec-5] INFO  service.UserService  - user verified thru email
+2013-10-04 19:16:33,733 [http-bio-8080-exec-6] INFO  controller.UserController  - in user controller signin method
+2013-10-04 19:16:33,747 [http-bio-8080-exec-6] INFO  service.UserService  - in user service signin method
+2013-10-04 19:16:33,753 [http-bio-8080-exec-6] INFO  service.UserService  - user authenticated
+2013-10-04 19:16:34,368 [http-bio-8080-exec-6] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.eot
+2013-10-04 19:16:34,375 [http-bio-8080-exec-6] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.eot]
+2013-10-04 19:16:34,376 [http-bio-8080-exec-6] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.eot
+2013-10-04 19:16:34,378 [http-bio-8080-exec-6] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.eot
+2013-10-04 19:16:34,379 [http-bio-8080-exec-6] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.eot]
+2013-10-04 19:16:34,379 [http-bio-8080-exec-6] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.eot?#iefix
+2013-10-04 19:16:34,381 [http-bio-8080-exec-6] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.woff
+2013-10-04 19:16:34,382 [http-bio-8080-exec-6] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.woff]
+2013-10-04 19:16:34,382 [http-bio-8080-exec-6] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.woff
+2013-10-04 19:16:34,384 [http-bio-8080-exec-6] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.ttf
+2013-10-04 19:16:34,384 [http-bio-8080-exec-6] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.ttf]
+2013-10-04 19:16:34,384 [http-bio-8080-exec-6] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.ttf
+2013-10-04 19:16:34,387 [http-bio-8080-exec-6] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.svg
+2013-10-04 19:16:34,387 [http-bio-8080-exec-6] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.svg]
+2013-10-04 19:16:34,387 [http-bio-8080-exec-6] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular
+2013-10-04 19:16:35,720 [http-bio-8080-exec-8] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:16:35,750 [http-bio-8080-exec-8] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:16:35,871 [http-bio-8080-exec-8] INFO  controller.ProjectController  - No projects to show
+2013-10-04 19:16:35,984 [http-bio-8080-exec-1] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 19:16:36,048 [http-bio-8080-exec-1] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 19:16:36,131 [http-bio-8080-exec-8] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:16:36,138 [http-bio-8080-exec-8] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:16:36,143 [http-bio-8080-exec-8] INFO  controller.ProjectController  - No projects to show
+2013-10-04 19:16:57,712 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller logout method
+2013-10-04 19:30:44,448 [http-bio-8080-exec-2] INFO  controller.UserController  - in user controller signin method
+2013-10-04 19:30:44,452 [http-bio-8080-exec-2] INFO  service.UserService  - in user service signin method
+2013-10-04 19:30:44,460 [http-bio-8080-exec-2] INFO  service.UserService  - user authenticated
+2013-10-04 19:30:45,704 [http-bio-8080-exec-7] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:30:45,711 [http-bio-8080-exec-7] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:30:45,756 [http-bio-8080-exec-8] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 19:30:45,765 [http-bio-8080-exec-8] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 19:30:45,863 [http-bio-8080-exec-11] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:30:45,867 [http-bio-8080-exec-11] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:30:55,351 [http-bio-8080-exec-5] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:30:55,356 [http-bio-8080-exec-5] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:31:36,931 [http-bio-8080-exec-8] INFO  controller.TicketController  - in Ticket controller save ticket method
+2013-10-04 19:31:36,941 [http-bio-8080-exec-8] INFO  controller.TicketController  - token found
+2013-10-04 19:31:36,945 [http-bio-8080-exec-2] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 19:31:36,949 [http-bio-8080-exec-9] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 19:31:36,955 [http-bio-8080-exec-2] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 19:31:36,961 [http-bio-8080-exec-9] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 19:31:36,964 [http-bio-8080-exec-8] INFO  controller.TicketController  - User found
+2013-10-04 19:31:37,094 [http-bio-8080-exec-8] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [POST] /trac/ticket
+No such property: name for class: com.neev.controller.TicketController. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: name for class: com.neev.controller.TicketController
+	at com.neev.controller.TicketController.save(TicketController.groovy:41)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:200)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+2013-10-04 20:32:27,690 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 20:32:27,718 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 20:32:28,439 [main] INFO  webxml.WebxmlGrailsPlugin  - Loading default config file: class DefaultWebXmlConfig
+2013-10-04 20:32:28,445 [main] WARN  webxml.WebxmlGrailsPlugin  - Did not find application config file: WebXmlConfig
+2013-10-04 20:32:38,354 [localhost-startStop-1] INFO  [localhost].[/trac]  - Initializing Spring root WebApplicationContext
+2013-10-04 20:32:46,773 [localhost-startStop-1] INFO  hibernate3.HibernatePluginSupport  - Set db generation strategy to 'update' for datasource DEFAULT
+2013-10-04 20:32:48,307 [localhost-startStop-1] INFO  cache.CacheBeanPostProcessor  - postProcessBeanDefinitionRegistry start
+2013-10-04 20:32:48,311 [localhost-startStop-1] INFO  cache.CacheBeanPostProcessor  - postProcessBeanFactory
+2013-10-04 20:32:50,488 [localhost-startStop-1] WARN  config.ConfigurationFactory  - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/home/neev-admin/.m2/repository/net/sf/ehcache/ehcache-core/2.4.6/ehcache-core-2.4.6.jar!/ehcache-failsafe.xml
+2013-10-04 20:32:53,812 [localhost-startStop-1] INFO  scaffolding.AbstractGrailsTemplateGenerator  - Scaffolding template generator set to use resource loader [org.codehaus.groovy.grails.commons.spring.GrailsWebApplicationContext@4a6e46ae: startup date [Fri Oct 04 20:32:47 IST 2013]; parent: Root WebApplicationContext]
+2013-10-04 20:32:55,940 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Performing a full reload
+2013-10-04 20:32:56,261 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Loading resource declarations...
+2013-10-04 20:32:56,263 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Forgetting all known modules...
+2013-10-04 20:32:56,265 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Forgetting all known resources...
+2013-10-04 20:32:56,526 [localhost-startStop-1] WARN  module.ModuleDeclarationsFactory  - 'grails.resources.modules' in config does not define any modules
+2013-10-04 20:32:57,296 [localhost-startStop-1] INFO  resource.ResourceProcessor  - Finished full reload
+2013-10-04 20:33:00,060 [localhost-startStop-1] INFO  databasemigration.MigrationRunner  - updateOnStart disabled for dataSource; not running migrations
+2013-10-04 20:33:00,109 [localhost-startStop-1] WARN  util.GrailsUtil  - [DEPRECATED] Method ApplicationHolder.getApplication() is deprecated and will be removed in a future version of Grails.
+2013-10-04 20:33:00,121 [localhost-startStop-1] WARN  util.GrailsUtil  - [DEPRECATED] Method ApplicationHolder.getApplication() is deprecated and will be removed in a future version of Grails.
+2013-10-04 20:33:00,234 [localhost-startStop-1] INFO  context.GrailsConfigUtils  - [GrailsContextLoader] Grails application loaded.
+2013-10-04 20:33:00,534 [localhost-startStop-1] INFO  [localhost].[/trac]  - Initializing Spring FrameworkServlet 'grails'
+2013-10-04 20:33:00,657 [main] INFO  http11.Http11Protocol  - Starting ProtocolHandler ["http-bio-8080"]
+2013-10-04 20:33:00,981 [http-bio-8080-exec-3] INFO  [localhost].[/trac]  - Initializing Spring FrameworkServlet 'gsp'
+2013-10-04 20:33:00,982 [http-bio-8080-exec-3] INFO  [localhost].[/trac]  - GSP servlet initialized
+2013-10-04 20:33:10,365 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller signin method
+2013-10-04 20:33:10,532 [http-bio-8080-exec-8] INFO  service.UserService  - in user service signin method
+2013-10-04 20:33:10,847 [http-bio-8080-exec-8] INFO  service.UserService  - user authenticated
+2013-10-04 20:33:11,951 [http-bio-8080-exec-8] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.eot
+2013-10-04 20:33:11,973 [http-bio-8080-exec-8] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.eot]
+2013-10-04 20:33:11,975 [http-bio-8080-exec-8] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.eot
+2013-10-04 20:33:11,980 [http-bio-8080-exec-8] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.eot
+2013-10-04 20:33:11,981 [http-bio-8080-exec-8] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.eot]
+2013-10-04 20:33:11,982 [http-bio-8080-exec-8] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.eot?#iefix
+2013-10-04 20:33:11,986 [http-bio-8080-exec-8] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.woff
+2013-10-04 20:33:11,987 [http-bio-8080-exec-8] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.woff]
+2013-10-04 20:33:11,987 [http-bio-8080-exec-8] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.woff
+2013-10-04 20:33:11,989 [http-bio-8080-exec-8] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.ttf
+2013-10-04 20:33:11,990 [http-bio-8080-exec-8] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.ttf]
+2013-10-04 20:33:11,991 [http-bio-8080-exec-8] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.ttf
+2013-10-04 20:33:11,994 [http-bio-8080-exec-8] ERROR resource.ResourceMeta  - While processing /css/bootstrap.css, a resource was required but not found: /fonts/glyphicons-halflings-regular.svg
+2013-10-04 20:33:11,995 [http-bio-8080-exec-8] WARN  util.ResourceMetaStore  - Cannot locate resource [/fonts/glyphicons-halflings-regular.svg]
+2013-10-04 20:33:11,995 [http-bio-8080-exec-8] WARN  mapper.cssrewriter  - Cannot resolve CSS resource, leaving link as is: resource:/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular
+2013-10-04 20:33:13,489 [http-bio-8080-exec-6] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:33:13,508 [http-bio-8080-exec-6] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:33:13,643 [http-bio-8080-exec-10] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 20:33:13,708 [http-bio-8080-exec-10] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 20:33:13,870 [http-bio-8080-exec-6] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:33:13,881 [http-bio-8080-exec-6] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:33:17,585 [http-bio-8080-exec-10] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:33:17,591 [http-bio-8080-exec-10] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:38:18,213 [http-bio-8080-exec-4] INFO  controller.TicketController  - in Ticket controller save ticket method
+2013-10-04 20:38:18,220 [http-bio-8080-exec-4] INFO  controller.TicketController  - token found
+2013-10-04 20:38:18,235 [http-bio-8080-exec-1] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 20:38:18,236 [http-bio-8080-exec-4] INFO  controller.TicketController  - User found
+2013-10-04 20:38:18,238 [http-bio-8080-exec-9] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:38:18,242 [http-bio-8080-exec-1] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 20:38:18,249 [http-bio-8080-exec-9] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:38:18,467 [http-bio-8080-exec-4] ERROR errors.GrailsExceptionResolver  - MissingPropertyException occurred when processing request: [POST] /trac/ticket
+No such property: name for class: com.neev.controller.TicketController. Stacktrace follows:
+groovy.lang.MissingPropertyException: No such property: name for class: com.neev.controller.TicketController
+	at com.neev.controller.TicketController.save(TicketController.groovy:41)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:200)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+2013-10-04 20:38:35,070 [http-bio-8080-exec-5] INFO  controller.UserController  - in user controller signin method
+2013-10-04 20:38:35,072 [http-bio-8080-exec-5] INFO  service.UserService  - in user service signin method
+2013-10-04 20:39:20,971 [http-bio-8080-exec-5] INFO  controller.UserController  - in user controller signin method
+2013-10-04 20:39:20,972 [http-bio-8080-exec-5] INFO  service.UserService  - in user service signin method
+2013-10-04 20:39:20,976 [http-bio-8080-exec-5] INFO  service.UserService  - user authenticated
+2013-10-04 20:39:22,145 [http-bio-8080-exec-3] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:22,164 [http-bio-8080-exec-3] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:22,213 [http-bio-8080-exec-6] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 20:39:22,220 [http-bio-8080-exec-6] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 20:39:22,285 [http-bio-8080-exec-10] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:22,289 [http-bio-8080-exec-10] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:23,752 [http-bio-8080-exec-6] INFO  controller.UserController  - in user controller logout method
+2013-10-04 20:39:29,574 [http-bio-8080-exec-8] INFO  controller.UserController  - in user controller signin method
+2013-10-04 20:39:29,576 [http-bio-8080-exec-8] INFO  service.UserService  - in user service signin method
+2013-10-04 20:39:29,580 [http-bio-8080-exec-8] INFO  service.UserService  - user authenticated
+2013-10-04 20:39:30,417 [http-bio-8080-exec-6] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:30,423 [http-bio-8080-exec-6] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:30,426 [http-bio-8080-exec-6] INFO  controller.ProjectController  - No projects to show
+2013-10-04 20:39:30,463 [http-bio-8080-exec-2] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 20:39:30,471 [http-bio-8080-exec-2] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 20:39:30,521 [http-bio-8080-exec-6] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:30,525 [http-bio-8080-exec-6] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:30,528 [http-bio-8080-exec-6] INFO  controller.ProjectController  - No projects to show
+2013-10-04 20:39:32,192 [http-bio-8080-exec-7] INFO  controller.UserController  - in user controller logout method
+2013-10-04 20:39:43,446 [http-bio-8080-exec-7] INFO  controller.UserController  - in user controller signin method
+2013-10-04 20:39:43,448 [http-bio-8080-exec-7] INFO  service.UserService  - in user service signin method
+2013-10-04 20:39:43,452 [http-bio-8080-exec-7] INFO  service.UserService  - user authenticated
+2013-10-04 20:39:44,159 [http-bio-8080-exec-7] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:44,163 [http-bio-8080-exec-7] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:44,166 [http-bio-8080-exec-7] INFO  controller.ProjectController  - No projects to show
+2013-10-04 20:39:44,209 [http-bio-8080-exec-7] INFO  controller.TicketController  - in Ticket controller get all tickets assigned to user method
+2013-10-04 20:39:44,213 [http-bio-8080-exec-1] INFO  controller.ProjectController  - in project controller show project method
+2013-10-04 20:39:44,213 [http-bio-8080-exec-7] INFO  service.TicketService  - in Ticket Service get all tickets assigned to user method
+2013-10-04 20:39:44,218 [http-bio-8080-exec-1] INFO  service.ProjectService  - in project service show all project by user method
+2013-10-04 20:39:44,221 [http-bio-8080-exec-1] INFO  controller.ProjectController  - No projects to show
+2013-10-04 20:39:51,872 [http-bio-8080-exec-3] INFO  controller.UserController  - in user controller logout method

@@ -1,0 +1,81 @@
+ <div style="margin-top:3%;margin-left:0%" ng-controller="Controller">
+ <div flash-alert="error" active-class="in" class="alert fade">
+    <strong class="alert-heading">Boo!</strong>
+    <span class="alert-message">{{flash.message}}</span>
+</div>
+          <ul class="list-inline body-boder">
+                 <li class="col-md-4"></li>
+                 <li class="col-md-5 body-boder" >
+                         <input type="hidden" id="rootFolder" name="token"  ng-model="token" value="${token}"/>
+                         <h3 align="left" style="color:#289EF2">Modify Password</h3>
+                         <hr style="background:#1df772; border:0; height:1px; " />
+                         <form ng-submit="modifypassword()">
+                              <p style="margin-left:1%;">oldpassword:<input type="Password" class="form-control" name="oldpassword" ng-model="old"  placeholder="Enter The Old Password" required=""></p>
+                              <p style="margin-left:1%;">New Password<input type="Password" class="form-control" name="newpassword"  ng-model="news" placeholder="Enter The New Password" required=""></p>
+                              <p style="margin-left:1%;">Confirm Password<input type="Password" class="form-control" name="confirmpassword" ng-model="newConfirm" placeholder="Enter The Confirm Password" required=""></p>
+                              <p style="margin-left:1%;"><button type="submit" class="btn btn-primary pull-left" >Submit</button><a href="#/view/ticketlist"><button style="margin-left: 5%" type="button" class="btn btn-primary">CANCEL</button></a></p>
+                         </form>
+                </li>
+                 <li class="col-md-1"></li>
+          </ul>
+            
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" style="margin-top:5.3%;margin-left:0%">
+            <div class="container" >
+                        <ul class="list-inline ">
+                          <li class="col-md-3"></li>
+                        <li class="col-md-6">
+                                    <h3 align="center" style="color:#289EF2">Modify Password</h3>
+                                    <hr style="background:#1df772; border:0; height:1px; " />
+                                    <div class="container body-boder"  ng-controller="Controller">
+                                        <ul class="list-inline">
+                                          
+                                          <li class="col-md-1"></li>
+                                          <li class="col-md-8 ">
+                                          <p style="margin-left:-3%;">Enter Old Password:<input type="Password" class="form-control" name="oldpassword" ng-model="old"  placeholder="Old Password"></p>
+                                          <p style="margin-left:-3%;">Enter New Password<input type="Password" class="form-control" name="newpassword"  ng-model="news" placeholder="New Password"></p>
+                                          <p style="margin-left:-3%;">Enter Confirm New Password<input type="Password" class="form-control" name="confirmpassword" ng-model="newConfirm" placeholder="Confirm Password"></p>
+                                          <p style="margin-left:-3%;"><a href="#/view/ticketlist"><button type="submit" class="btn btn-primary pull-right" ng-click="modifypassword()">Submit</button></a></p>
+                                          </li>
+                                          <li class="col-md-3"></li>
+                                          
+                                          
+                                          
+                                          
+                                              <li class="col-md-6">
+                                                    <p style="margin-top:5%">Old Password</p>
+                                                    <p style="margin-top:14%">New Password</p>
+                                                    <p style="margin-top:18%">Confirm Password</p>
+                                              </li>
+                                              <li class="col-md-6">
+                                              <form method="post" action="modifyPassword" controller="user">
+                                                        <input type="Password" class="form-control" name="oldpassword" ng-model="old"  placeholder="Old Password"><br>
+                                                        <input type="Password" class="form-control" name="newpassword"  ng-model="news" placeholder="New Password"><br>
+                                                        <input type="Password" class="form-control" name="confirmpassword" ng-model="newConfirm" placeholder="Confirm Password"><br>
+                                                        <a href="#/view/ticketlist"><button type="submit" class="btn btn-primary pull-right" ng-click="modifypassword()">Submit</button></a>
+                                                        
+                                              </form>
+                                              </li>
+                                       </ul>
+                                    </div>
+                        </li>
+                        <li class="col-md-3"></li>
+                        </ul>
+            </div>
+            
+        </div>-->

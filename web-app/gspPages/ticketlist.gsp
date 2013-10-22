@@ -1,0 +1,312 @@
+<div class="main-body container">
+  <div class="row">
+        <div class="col-md-8 pull-left" style="margin-top:9.3%;margin-right:5%" ng-controller="Controller" ng-init="getTicket()" >
+          <h4 align="left"><b>ISSUES</b></h4>
+               <input type="hidden" id="rootFolder" name="token"  ng-model="token" value="${token}"/>
+<div flash-alert="error" active-class="in" class="alert fade">
+                       <strong class="alert-heading">Boo!</strong>
+                       <span class="alert-message">{{flash.message}}</span>
+              </div>  
+               
+               
+               
+               <div class="alert alert-success pull-left small">{{data}} tickets are assigned to you</div>
+                <p style="margin-left:3%;">Ticket Status:
+                                <select id="ticketstatus" name="ticketstatus"  ng-init="ticketstatus='all' " ng-model="ticketstatus" class="form-control" >
+                                      <option value="all" id="all" >ALL</option>  
+                                      <option value="new" id="new"  >NEW</option>
+                                      <option value="in progress" id="in progress"  >IN PROGRESS</option>
+                                      <option value="completed" id="completed"  >COMPLETED</option>
+                                </select>
+                        </p>
+                         <p style="margin-left:3%;">Ticket Priority: 
+                                <select id="priority" class="form-control"  ng-init="ticketpriority='all' "  ng-model="ticketpriority" >
+                                      <option value="all" id="all" >ALL</option>  
+                                      <option value="low" id="low" >LOW</option>  
+                                      <option value="high" id="high" >HIGH</option>
+                                      <option value="normal" id="normal" >NORMAL</option>
+                                      <option value="urgent" id="urgent" >URGENT</option>
+                                      <option value="immediate" id="immediate">IMMEDIATE</option>
+                                </select>
+                        </p>
+                        
+                        <a href="#/view/filter/{{ticketstatus}}/{{ticketpriority}}"> <button  type="submit" ng-controller="Controller" class="btn btn-primary" ng-click="filter()">SUBMIT</button></a>
+<div align='center' ng-init="getTicket()">
+                            <div class="table-head row">
+                                <div class="col-md-1"><b>ID</b></div>
+                                <div class="col-md-3"><b>NAME</b></div>
+                                <div class="col-md-2"><b>PROJECT</b></div>
+                                <div class="col-md-2"><b>PRIORITY</b></div>
+                                <div class="col-md-2"><b>STATUS</b></div>
+                            </div>
+                            <div ng-repeat ="ticket in code1">
+                                <div>
+<!--                                    <a href="#/view/updateticket/{{ticket.id}}"  style="color: red" id="" ng-controller="updateController" ng-click="updateTicketbyId()">-->
+                                    <div class="row body-boder " style="color: red">
+                                     
+                                        <div class="col-md-1">{{ticket.id}}</div>
+                                        <div class="col-md-3"><a href="#/view/updateticket/{{ticket.id}}" ng-controller="updateController" ng-click="updateTicketbyId()">{{ticket.name}}</a></div>
+                                        <div class="col-md-2">{{ticket.project}}</div>
+                                        <div class="col-md-2">{{ticket.priority}}</div>
+                                        <div class="col-md-2">{{ticket.status}}</div>
+                                        <button  title="comment" class="btn btn-sm" ng-click="toggle = !toggle"><span class="glyphicon glyphicon-edit blue" ></span></button>
+                                    </div>
+                                    <div ng-show="toggle" class="row body-boder">
+                                      <ul style="list-style-type:none;">
+                                        <li class="col-md-8">
+                                          <form ng-submit="updatetickets(ticket.id,ticket.project,ticket.previousassignTo,ticket.currentstatus,ticket.currentpriority)" ng-controller="updateController">
+                                                      <p style="margin-top: 2%;" class="pull-left">Priority</p>  
+                                                      <p style="margin-top: 0%;">
+                                                            <select class="form-control" id="priority" name="priority" ng-model="ticket.priority"  required="" >
+                                                                <option value="high"   id="high" >high</option>
+                                                                <option value="medium"   id="medium" >medium</option>
+                                                                <option value="low"   id="low" >low</option>  
+                                                                <option value="normal" id="normal" >normal</option>
+                                                                <option value="urgent"  id="urgent" >urgent</option>
+                                                                <option value="immediate" id="immediate">immediate</option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">Status</p>  
+                                                      <p style="margin-top:0%;">
+                                                            <select class="form-control" id="status" name="status" ng-model="ticket.status"  required="">
+                                                                <option value="new"   id="new" >new</option>
+                                                                <option value="in progress"   id="in progress" >in progress</option>
+                                                                <option value="completed"   id="completed" >completed</option>  
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">AssignTo</p>   
+                                                      <p style="margin-top:0%;">
+                                                            <select  id="assignTo"  ng-model="ticket.assignTo" class="form-control" name="assignTo" ng-controller="updateController" ng-init="getAllUsersForProject(ticket.project)">
+                                                                <option value="" style="display:none" >Assign To</option>  
+                                                                <option ng-repeat="assign in codess" value="{{assign.name}}"> {{assign.name}} </option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top:2%;" class="pull-left">Comment</p>  
+                                                      <p style="margin-top:0%;">
+                                                        <textarea rows="3" cols="50" class="form-control" ng-model="Comment" placeholder="Comment">
+                                                            </textarea>
+                                                      </p>
+                                                      <p style="margin-top:2%;">
+                                                            <button type="submit"  class="btn btn-primary pull-left" >SUBMIT</button>
+                                                            <button type="button" class="btn btn-primary pull-left" style="margin-left: 5%">Cancel</button>
+                                                      </p>
+                                          </form>
+                                        </li>
+                                      </ul>
+                                      </div>
+<!--                                    </a>-->
+                                </div>
+                            </div>
+               
+<!--                            <div ng-repeat ="ticket in code2">
+                                <div>
+                                <a href="#/view/updateticket/{{ticket.id}}" id="" style="color: #002a80" ng-controller="updateController" ng-click="updateTicketbyId()">
+                                    <div class="row body-boder " style="color: #002a80">
+                                        <div class="col-md-1">{{ticket.id}}</div>
+                                        <div class="col-md-3"><a href="#/view/updateticket/{{ticket.id}}" ng-controller="updateController" ng-click="updateTicketbyId()">{{ticket.name}}</a></div>
+                                        <div class="col-md-2">{{ticket.project}}</div>
+                                        <div class="col-md-2">{{ticket.priority}}</div>
+                                        <div class="col-md-2">{{ticket.status}}</div>
+                                        <button  title="comment" class="btn btn-sm" ng-click="toggle = !toggle"><span class="glyphicon glyphicon-edit blue"></span></button>
+                                        <a href="#/view/updateticket/{{ticket.id}}" ng-controller="updateController" ng-click="updateTicketbyId()"><span class="glyphicon glyphicon-comment"></span></a>
+                                    </div>
+                                    <div ng-show="toggle" class="row body-boder">
+                                      <ul style="list-style-type:none;">
+                                        <li class="col-md-8">
+                                          <form ng-submit="updatetickets(ticket.id,ticket.project,ticket.previousassignTo,ticket.currentstatus,ticket.currentpriority)" ng-controller="updateController">
+                                                      <p style="margin-top: 2%;" class="pull-left">Priority</p>  
+                                                      <p style="margin-top: 0%;">
+                                                            <select class="form-control" id="priority" name="priority" ng-model="ticket.priority"  required="" >
+                                                                <option value="high"   id="high" >high</option>
+                                                                <option value="medium"   id="medium" >medium</option>
+                                                                <option value="low"   id="low" >low</option>  
+                                                                <option value="normal" id="normal" >normal</option>
+                                                                <option value="urgent"  id="urgent" >urgent</option>
+                                                                <option value="immediate" id="immediate">immediate</option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">Status</p>  
+                                                      <p style="margin-top:0%;">
+                                                            <select class="form-control" id="status" name="status" ng-model="ticket.status"  required="">
+                                                                <option value="in progress"   id="in progress" >in progress</option>
+                                                                <option value="completed"   id="completed" >completed</option>  
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">AssignTo</p>   
+                                                      <p style="margin-top:0%;">
+                                                            <select  id="assignTo"  ng-model="ticket.assignTo" class="form-control" name="assignTo" ng-controller="updateController" ng-init="getAllUsersForProject(ticket.project)">
+                                                                <option value="" style="display:none" >Assign To</option>  
+                                                                <option ng-repeat="assign in codess" value="{{assign.name}}"> {{assign.name}} </option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top:2%;" class="pull-left">Comment</p>  
+                                                      <p style="margin-top:0%;">
+                                                        <textarea rows="3" cols="50" class="form-control" ng-model="Comment" placeholder="Comment">
+                                                            </textarea>
+                                                      </p>
+                                                      <p style="margin-top:2%;">
+                                                            <button type="submit"  class="btn btn-primary pull-left" >SUBMIT</button>
+                                                            <button type="button" class="btn btn-primary pull-left" style="margin-left: 5%">Cancel</button>
+                                                      </p>
+                                          </form>
+                                        </li>
+                                      </ul>
+                                      </div>
+                                </a>
+                              </div>
+                        </div>-->
+<!--                        <div ng-repeat ="ticket in code3">
+                            <div>
+                              <a href="#/view/updateticket/{{ticket.id}}" id="" style="color: green" ng-controller="updateController" ng-click="updateTicketbyId()">
+                                <div class="row body-boder " style="color: green">
+                                      <div class="col-md-1">{{ticket.id}}</div>
+                                      <div class="col-md-3"><a title="comment" href="#/view/updateticket/{{ticket.id}}" ng-controller="updateController" ng-click="updateTicketbyId()">{{ticket.project}}</a></div>
+                                      <div class="col-md-2">{{ticket.name}}</div>
+                                      <div class="col-md-2">{{ticket.priority}}</div>
+                                      <div class="col-md-2">{{ticket.status}}</div>
+                                      <button  title="comment" class="btn btn-sm" ng-click="toggle = !toggle" ><span class="glyphicon glyphicon-edit blue"></span></button>
+                                </div>
+                                <div ng-show="toggle" class="row body-boder">
+                                      <ul style="list-style-type:none;">
+                                        <li class="col-md-8">
+                                          <form ng-submit="updatetickets(ticket.id,ticket.project,ticket.previousassignTo,ticket.currentstatus,ticket.currentpriority)" ng-controller="updateController">
+                                                      <p style="margin-top: 2%;" class="pull-left">Priority</p>  
+                                                      <p style="margin-top: 0%;">
+                                                            <select class="form-control" id="priority" name="priority" ng-model="ticket.priority"  required="" >
+                                                                <option value="high"   id="high" >high</option>
+                                                                <option value="medium"   id="medium" >medium</option>
+                                                                <option value="low"   id="low" >low</option>  
+                                                                <option value="normal" id="normal" >normal</option>
+                                                                <option value="urgent"  id="urgent" >urgent</option>
+                                                                <option value="immediate" id="immediate">immediate</option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">Status</p>  
+                                                      <p style="margin-top:0%;">
+                                                            <select class="form-control" id="status" name="status" ng-model="ticket.status"  required="">
+                                                                <option value="completed"   id="completed" >completed</option>  
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top: 2%;" class="pull-left">AssignTo</p>   
+                                                      <p style="margin-top:0%;">
+                                                            <select  id="assignTo"  ng-model="ticket.assignTo" class="form-control" name="assignTo" ng-controller="updateController" ng-init="getAllUsersForProject(ticket.project)">
+                                                                <option value="" style="display:none" >Assign To</option>  
+                                                                <option ng-repeat="assign in codess" value="{{assign.name}}"> {{assign.name}} </option>
+                                                            </select>
+                                                      </p>
+                                                      <p style="margin-top:2%;" class="pull-left">Comment</p>  
+                                                      <p style="margin-top:0%;">
+                                                        <textarea rows="3" cols="50" class="form-control" ng-model="Comment" placeholder="Comment">
+                                                            </textarea>
+                                                      </p>
+                                                      <p style="margin-top:2%;">
+                                                            <button type="submit"  class="btn btn-primary pull-left" >SUBMIT</button>
+                                                            <button type="button" class="btn btn-primary pull-left" style="margin-left: 5%">Cancel</button>
+                                                      </p>
+                                          </form>
+                                        </li>
+                                      </ul>
+                                      </div>
+                             </a>
+                            </div>
+                          </div>-->
+                          </div>
+              </div>
+              <div class="col-md-3 pull-right" style="margin-top:12.6%;margin-left:0%" ng-controller="Controller" ng-init="getProject()" >
+                              <input type="hidden" id="rootFolder" name="token"  ng-model="token" value="${token}"/>
+                              <h3>&nbsp;</h3>
+                              <h4>&nbsp;</h4>
+                              <h4 align="center" class="table-head">PROJECTS</h4>  
+                              <div ng-repeat="project in codes">
+                                            <div class="body-boder">
+<!--                                               <a href="#/view/projectdetails/{{ticket.id}}" style="color: green" ng-controller="updateController" ng-click="updateProject()">-->
+                                                <a data-toggle="modal" href="#projectmodel" ng-click="projectlist(project.name,project.sdate,project.status,project.edate,project.opentickets,project.newtickets,project.desc,project.id,project.manager)">
+                                                <div>{{project.name}} ({{project.sdate}}--{{project.edate}})</div></a>
+                                                <sub>open({{project.opentickets}})</sub> <sub>new({{project.newtickets}})</sub><sub>status({{project.status}})</sub>
+                                            </div>
+                                            <div class="modal" id="projectmodel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                
+                                                      <div class="modal-header">
+                                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                          <h4 class="modal-title"><p><center><h4>Update Project</h4></center></p></h4>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <form ng-controller="updateController" ng-submit="updatepro(id,desc,edate,status,project.manager)">
+                                                          <p style="margin-top: 2%;" >Project Name:
+                                                            <input type="text" ng-model="name" class="form-control" readonly>
+                                                          </p>   
+                                                          <p style="margin-top: 2%;" >Project Start Date:
+                                                            <input type="text" ng-model="sdate" class="form-control" readonly>
+                                                          </p>  
+                                                          <p style="margin-top: 2%;" >Open Tickets:
+                                                            <input type="text" ng-model="opentickets" class="form-control" readonly>
+                                                          </p>   
+                                                          <p style="margin-top: 2%;" >New Tickets:
+                                                            <input type="text" ng-model="newtickets" class="form-control" readonly>
+                                                          </p>
+                                                          <p style="margin-top: 2%;" >Project Manager:
+                                                            <input type="text" ng-model="manager" class="form-control" readonly>
+                                                          </p>
+                                                          <p style="margin-top: 2%;" >Description:
+                                                            <input type="text" ng-model="desc" class="form-control">
+                                                          </p>
+                                                          <p style="margin-top: 2%;" >Project End Date:
+                                                            <input type="date" ng-model="edate" class="form-control">
+                                                          </p>
+                                                          <p style="margin-top: 2%;" >Status:
+                                                              <select id="projectstatus" name="projectstatus" required="required"  ng-model="status" class="form-control" >
+                                                                    <option value="new"   id="new" >new</option>
+                                                                    <option value="in progress"   id="in progress" >in progress</option>
+                                                                    <option value="completed"   id="completed" >completed</option>  
+                                                              </select>
+                                                          </p>
+                                                          <p style="margin-top: 0%;">Change Manager:
+                                                              <input list="user" name="user" class="form-control" ng-model="manager"  >
+                                                                  <datalist id="user" ng-init="getAllUsers()">
+                                                                      <option ng-repeat="datas in data" value="{{datas.name}}">{{datas.email}}</option>
+                                                                  </datalist>
+                                                          </p>
+                                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                              <button type="submit" class="btn btn-primary"> Save </button>
+                                                    </form>
+                                                      </div>  
+
+                                                </div>
+                                                </div>
+                                            </div>
+                              </div>
+                               <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">prev</button>
+                       {{currentPage+1}}/{{numberOfPages}}
+                       <button ng-disabled="currentPage >= data/pageSize - 1" ng-click="currentPage=currentPage+1">More..</button>
+                              
+               </div>
+              </div>
+  </div>
+</div>
+
+
+
+
+
+<style>
+.main-body{
+  width: 960px;
+  margin: auto;
+}
+.main-body .table-head{
+/*  background: #E9E9E9;*/
+  background: #87CEFA;
+  border-bottom: solid 1px #e3e3e3;
+  overflow: hidden;
+  padding: 15px 5px 15px 5px;
+  margin-bottom: 10px;
+}
+</style>
+
+<script>
+  function MainController($scope) {
+  $scope.toggle = true;
+}
+</script>
