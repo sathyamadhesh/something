@@ -1,0 +1,40 @@
+
+
+                .leftcol{ float:left }
+                .topMAr{margin-top: 5px;}
+                html, body {
+                    height: 100%;
+                    min-height: 100%;
+                }
+                .wrapper {
+                    text-align: center;
+                }
+                .wrapper1 {
+                    text-align: right;
+                }
+                .button {
+                    position: absolute;
+                    top: 50%;
+                }
+                .menu12
+                {
+                    border-left: 1px solid #B0C4DE;
+                    border-right: 1px solid #B0C4DE;
+                }
+                .horLine
+                {
+                    border-top: 1px solid #87CEFA;
+                }
+                .ulBullet
+                {
+                  list-style-type: none;
+                  padding:0;
+                  margin:0;
+                }
+                .glow {
+                text-shadow:-1px 0px 20px #0a008f;
+                color:white;
+                }
+                
+
+                

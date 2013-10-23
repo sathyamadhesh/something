@@ -39,12 +39,8 @@
                                 <div class="col-md-2">PRIORITY</div>
                                 <div class="col-md-2">STATUS</div>
                             </div>
-<!--                  <div ng-repeat ="items in code1 | startFrom:currentPage*pageSize | limitTo:pageSize">
-                         <accordion-group heading="{{items.project}}" >
-                             hello!
-                         </accordion-group>
-                  </div>-->
-                            <div ng-repeat ="items in code1 | startFrom:currentPage*pageSize | limitTo:pageSize | filter:searchBar | orderBy:orderProp ">
+
+                            <div ng-repeat ="items in code1 | startFrom:currentPage*pageSize | limitTo:pageSize  ">
                                 <div>
                                     <a href="#/view/updateticket/{{items.id}}"  style="color: green" id="" ng-controller="updateController" ng-click="updateTicketbyId()">
                                     <div class="row body-boder table-head">
@@ -92,30 +88,7 @@
                        {{currentPage+1}}/{{numberOfPages}}
                        <button ng-disabled="currentPage >= data/pageSize - 1" ng-click="currentPage=currentPage+1">>></button>
                        
-<!--                       <div class='span2'>
-            Search: <input ng-model='searchBar'>
-            Sort by: 
-            <select ng-model='orderProp'>
-                <option value='name'>Alphabetical</option>
-                <option value='id'>Newest</option>
-            </select>
-        </div>-->
-                       
-<!--               <div class="pagination pull-right">
-                            <ul>
-                                <li ng-class="{disabled: currentPage == 0}">
-                                    <a href ng-click="prevPage()">« Prev</a>
-                                </li>
-                                <li ng-repeat="n in data"
-                                    ng-class="{active: n == currentPage}"
-                                ng-click="setPage()">
-                                    <a href ng-bind="n + 1">1</a>
-                                </li>
-                                <li ng-class="{disabled: currentPage == data - 1}">
-                                    <a href ng-click="nextPage()">Next »</a>
-                                </li>
-                            </ul>
-               </div>-->
+
 
                </div>
               </div>

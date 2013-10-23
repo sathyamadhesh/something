@@ -364,6 +364,7 @@ class TicketController {
                 List list= ticketService.getAllTicketsByProject(id)//calling service
                 JSONArray project1 = new JSONArray();
                 JSONArray status1 = new JSONArray();
+                JSONArray oldstatus1 = new JSONArray();
                 JSONArray userassigned = new JSONArray();
                 if(list)
                 {
@@ -372,6 +373,7 @@ class TicketController {
                     {
                         project1[i]=list[i].project.name
                         userassigned[i]=list[i].assignTo.name
+                        oldstatus1[i]=list[i].oldstatus.status
                         status1[i]=list[i].status.status
                     }
                  
@@ -379,9 +381,10 @@ class TicketController {
                     JSONArray desc = new JSONArray(list.description);
                     JSONArray name1 = new JSONArray(list.name);
                     JSONArray priority = new JSONArray(list.priority);
+                    print "oldstatus ***************"+oldstatus1
                     
               
-                    jsonbuilder.response("code": 200,"id": id1,"name": name1,"priority": priority,"project":project1,"desc":desc,"status":status1,"assignTo":userassigned);
+                    jsonbuilder.response("code": 200,"id": id1,"name": name1,"priority": priority,"project":project1,"desc":desc,"status":status1,"oldstatus":oldstatus1,"assignTo":userassigned);
                     render jsonbuilder.toString();              
                 }
                 else

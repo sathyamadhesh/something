@@ -27,8 +27,8 @@
                                       <option ng-repeat="items in codess" value="{{items.email}}" selected="selected"> {{items.name}} </option>
                                 </select>
                         </p>
-                        <p style="margin-left:3%">Date going to start Ticket<input type="date" class="datepicker1 form-control" id="datepicker" ng-model="startdate" required=""/></p>
-                        <p style="margin-left:3%">End Date Of Ticket<input type="date" class="datepicker1 form-control" id="datepicker" ng-model="enddate" required=""/></p>
+                        <p style="margin-left:3%">Date going to start Ticket<input type="date" class="datepicker1 form-control" id="datepicker"  min="{{sdate}}"ng-model="startdate" required=""/></p>
+                        <p style="margin-left:3%">End Date Of Ticket<input type="date" class="datepicker1 form-control" id="datepicker"  min="{{startdate}}" max="{{edate}}" ng-model="enddate" required=""/></p>
                         <p style="margin-left:3%;">Ticket Priority: 
                                 <select id="priority" class="form-control" required=""> 
                                       <option value="low" id="low" >LOW</option>  
@@ -40,7 +40,7 @@
                         </p>
                         <p style="margin-left:3%">
                               <button type="submit" class="btn btn-primary" ng-controller="updateController">SUBMIT</button>
-                              <a href="#/view/project/{{id}}"><button style="margin-left: 5%" type="button" class="btn btn-primary">CANCEL</button></a>
+                              <a href="#/view/project/{{id}}/{{sdate}}/{{edate}}"><button style="margin-left: 5%" type="button" class="btn btn-primary">CANCEL</button></a>
                         </p>
               </form>
           </li>

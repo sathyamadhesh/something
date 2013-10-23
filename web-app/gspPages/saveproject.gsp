@@ -17,7 +17,7 @@
                                           <p style="margin-left:1%">Description Of The Project<textarea class="form-control" rows="2" cols="20" ng-model="projectdesc"  placeholder="Description Of The Project" required>
                                               </textarea></p>
                                               <p style="margin-left:1%">Date going to start Project<input type="date" class="datepicker1 form-control" id="datepicker" ng-model="startdate" required=""/></p>
-                                              <p style="margin-left:1%">End Date Of Project<input type="date" class="datepicker1 form-control" id="datepicker" ng-model="enddate" required=""/></p>
+                                              <p style="margin-left:1%">End Date Of Project<input type="date" class="datepicker1 form-control" id="datepicker" min="{{startdate}}" ng-model="enddate" required=""/></p>
                                    
                                           <p style="margin-left:1%;">Project Manager
                                               <select ng-model="user" id="users" class="form-control" ng-controller="Controller" ng-init="getAllUsers()" required="">

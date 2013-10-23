@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="trac">
+  <head>
+    <title>TICKER</title>
+      <script type="text/javascript">
+window.onload = function preventback() {
+window.history.forward();}
+setTimeout("preventback()", 10);
+window.onunload=function(){null};
+
+</script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="css/commonDivStyle.css" type="text/css">
+      <script src="js/ticker.js" type="text/javascript"></script>
+      <script src="js/angular-flash.js" type="text/javascript"></script>
+  </head>
+
+  <body ng-controller="Controller">
+
+
+
+    <!-- for user authentication-->
+    <input type="hidden" name="token" id="token" value="{{session}}"/>
+    <!-- Header Part Start here-->
+    <div class="wrapper" style="margin-top:0%;margin-left:0%">
+      <div class="container pull-left" ><h3 style="color:white">TICKER</h3>
+      </div>
+      <div class="container pull-right" style="margin-right:-1.2%" ng-controller="Controller" ng-init="getProject()">
+        <ul class="menu" >
+          <form class="navbar-form navbar-left" role="search" ng-submit="search()">
+            <div class="form-search">
+              <div class="input-append" ng-controller="Controller"> 
+                <input type="text" id="q" ng-model="q" name="q" class="span2 search-query btn-sm" placeholder="Search"/>
+                <button class="btn btn-primary btn-sm" type="submit" >search</button>
+              </div>
+            </div>
+          </form>
+          <li id="bar1"><a href="#/view/ticketlist"><button type="button" class="btn btn-link" style="color:#1CE62A;">DASHBOARD</button></a></li>
+          <li class="dropdown" style="color:#1CE62A ; ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#1CE62A">PROJECTS<b class="caret"></b></a>
+            <ul class="dropdown-menu" style="overflow-y: auto; max-height: 200px;">
+              <li ng-repeat="abc in codes" class="top-main-manue"><a href="#/view/project/{{abc.id}}/{{abc.sdate}}/{{abc.edate}}" ng-controller="updateController" ng-click="listproject();listmembers();save()" style="color:#1CE62A">{{abc.name}}</a></li>
+            </ul>
+          </li> 
+          <li id="bar4"><a href="#/view/saveproject"><button type="button" class="btn btn-link btn-sm" style="color:#1CE62A;">Create Project</button></a></li>
+          <li id="bar2"><a href="#/view/myaccount"><button type="button" class="btn btn-link btn-sm" style="color:#1CE62A;">My Account</button></a></li>
+          <li id="bar3"><a href="http://localhost:8080/trac/user/logout?token={{session}}"><button type="button" class="btn btn-link btn-sm" style="color:#1CE62A;"><i class="icon-white icon-off">Log Out</i></button></a></li>
+        </ul>
+      </div>
+    </div> 
+    <!-- Header Part End here-->
+
+    <br><br>
+
+    <!-- Changing DIV -->    
+
+    <div ng-view></div>
+
+    <!-- Route configuration -->
+
+    <style>
+      .dropdown-menu .top-main-manue{width: 100%; height: 40px;}
+    </style>
+
+
+  </body>
+</html>

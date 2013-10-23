@@ -7,14 +7,14 @@
               </div>
 
                  <p>
-                   <a href="#/view/saveticket/{{id}}" ng-controller="updateController" >
+                   <a href="#/view/saveticket/{{id}}/{{sdate}}/{{edate}}" ng-controller="updateController" >
                     <button type='button' class="btn btn-primary"  ng-controller="updateController" ng-click="saveTic()">
                            +Create Ticket
                     </button>
                    </a>
                  </p>
                  <p>
-                    <a href="#/view/addmembers/{{id}}" ng-controller="newController" >
+                    <a href="#/view/addmembers/{{id}}/{{sdate}}/{{edate}}" ng-controller="newController" >
                        <button type='button' class="btn btn-primary"  ng-controller="newController" ng-click="addmembers()">
                            +Add Members
                        </button>
@@ -64,7 +64,7 @@
                               </a>
                             </div>
                           </div>-->
-                            <div ng-repeat ="items in codenf3 | startFrom:currentPage*pageSize | limitTo:pageSize | filter:searchBar | orderBy:orderProp">
+                            <div ng-repeat ="items in codenf3 | startFrom:currentPage*pageSize | limitTo:pageSize ">
                          
                             <div>
                               <a href="#/view/updateticket/{{items.id}}" id="" style="color: green" ng-controller="updateController" ng-click="updateTicketbyId()">
@@ -85,14 +85,7 @@
  <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1"><<</button>
                        {{currentPage+1}}/{{numberOfPages}}
                        <button ng-disabled="currentPage >= data/pageSize - 1" ng-click="currentPage=currentPage+1">>></button>
-<!--<div class='span2'>
-            Search: <input ng-model='searchBar'>
-            Sort by: 
-            <select ng-model='orderProp'>
-                <option value='name'>Alphabetical</option>
-                <option value='id'>Newest</option>
-            </select>
-        </div>-->
+
                                               </div>
              
               <div class="col-md-2" style="margin-top:12.4%;margin-left:0%" ng-controller="updateController" ng-init="listmembers()">

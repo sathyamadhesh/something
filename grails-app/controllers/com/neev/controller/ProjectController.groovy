@@ -159,7 +159,7 @@ class ProjectController
                         manager[i]=User.findByEmail(list[i].manager)
                     }
                     //print manager
-                    print "jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdf"
+                  //  print "jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdf"
                     print list
                     JSONArray sdate = new JSONArray(list.started.toString())
                     JSONArray edate = new JSONArray(list.enddate.toString())
@@ -333,6 +333,7 @@ class ProjectController
     }
     def getUsersForProjectId() //get users for a project by its id
     {
+        print "jyfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
         def token = params.token
         def id= params.Id
         if(!token)
@@ -358,7 +359,8 @@ class ProjectController
                 names[i]=user.name
                 emails[i]=user.email
             }
-            
+            print names
+            print emails
             
             jsonbuilder.response("code": 200,"name": names,"email": emails);
             render jsonbuilder.toString();

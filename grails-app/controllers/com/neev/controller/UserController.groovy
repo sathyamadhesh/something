@@ -73,7 +73,8 @@ class UserController {
             def tok = userService.md5(user1.email,date) //creation of authentication token for the user to maintain session
             user1.authToken=tok
             user1.save() //updating in database with user authentication token
-            redirect(action:"homepage",controller:"user", params:[token:tok])//rendering homepage on successful login
+            //redirect(action:"homepage",controller:"user", params:[token:tok])//rendering homepage on successful login
+            response.sendRedirect("/trac/html/homepage.html?token=${tok}");
         }
         else
         {

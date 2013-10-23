@@ -11,7 +11,7 @@
                
                
                <div class="alert alert-success pull-left small">{{data}} tickets are assigned to you</div>
-                <p style="margin-left:3%;">Ticket Status:
+                        <p style="margin-left:3%;" class="col-md-4">Ticket Status:
                                 <select id="ticketstatus" name="ticketstatus"  ng-init="ticketstatus='all' " ng-model="ticketstatus" class="form-control" >
                                       <option value="all" id="all" >ALL</option>  
                                       <option value="new" id="new"  >NEW</option>
@@ -19,7 +19,7 @@
                                       <option value="completed" id="completed"  >COMPLETED</option>
                                 </select>
                         </p>
-                         <p style="margin-left:3%;">Ticket Priority: 
+                         <p style="margin-left:3%;" class="col-md-4">Ticket Priority: 
                                 <select id="priority" class="form-control"  ng-init="ticketpriority='all' "  ng-model="ticketpriority" >
                                       <option value="all" id="all" >ALL</option>  
                                       <option value="low" id="low" >LOW</option>  
@@ -41,7 +41,6 @@
                             </div>
                             <div ng-repeat ="ticket in code1">
                                 <div>
-<!--                                    <a href="#/view/updateticket/{{ticket.id}}"  style="color: red" id="" ng-controller="updateController" ng-click="updateTicketbyId()">-->
                                     <div class="row body-boder " style="color: red">
                                      
                                         <div class="col-md-1">{{ticket.id}}</div>
@@ -94,7 +93,6 @@
                                         </li>
                                       </ul>
                                       </div>
-<!--                                    </a>-->
                                 </div>
                             </div>
                
@@ -219,7 +217,6 @@
                               <h4 align="center" class="table-head">PROJECTS</h4>  
                               <div ng-repeat="project in codes">
                                             <div class="body-boder">
-<!--                                               <a href="#/view/projectdetails/{{ticket.id}}" style="color: green" ng-controller="updateController" ng-click="updateProject()">-->
                                                 <a data-toggle="modal" href="#projectmodel" ng-click="projectlist(project.name,project.sdate,project.status,project.edate,project.opentickets,project.newtickets,project.desc,project.id,project.manager)">
                                                 <div>{{project.name}} ({{project.sdate}}--{{project.edate}})</div></a>
                                                 <sub>open({{project.opentickets}})</sub> <sub>new({{project.newtickets}})</sub><sub>status({{project.status}})</sub>
@@ -230,6 +227,7 @@
                                                 
                                                       <div class="modal-header">
                                                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            
                                                           <h4 class="modal-title"><p><center><h4>Update Project</h4></center></p></h4>
                                                       </div>
                                                       <div class="modal-body">
@@ -253,7 +251,7 @@
                                                             <input type="text" ng-model="desc" class="form-control">
                                                           </p>
                                                           <p style="margin-top: 2%;" >Project End Date:
-                                                            <input type="date" ng-model="edate" class="form-control">
+                                                            <input type="date" ng-model="edate" class="form-control" min="{{sdate}}">
                                                           </p>
                                                           <p style="margin-top: 2%;" >Status:
                                                               <select id="projectstatus" name="projectstatus" required="required"  ng-model="status" class="form-control" >
@@ -270,6 +268,10 @@
                                                           </p>
                                                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                               <button type="submit" class="btn btn-primary"> Save </button>
+                                                              <div flash-alert="error" active-class="in" class="alert fade">
+                                                              <strong class="alert-heading">Error!</strong>
+                                                              <span class="alert-message">{{flash.message}}</span>
+                                                            </div>
                                                     </form>
                                                       </div>  
 
@@ -296,7 +298,6 @@
   margin: auto;
 }
 .main-body .table-head{
-/*  background: #E9E9E9;*/
   background: #87CEFA;
   border-bottom: solid 1px #e3e3e3;
   overflow: hidden;

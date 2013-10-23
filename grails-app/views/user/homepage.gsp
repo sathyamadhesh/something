@@ -47,7 +47,7 @@ window.onunload=function(){null};
           <li class="dropdown" style="color:#1CE62A ; ">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#1CE62A">PROJECTS<b class="caret"></b></a>
             <ul class="dropdown-menu" style="overflow-y: auto; max-height: 200px;">
-              <li ng-repeat="abc in codes" class="top-main-manue"><a href="#/view/project/{{abc.id}}" ng-controller="updateController" ng-click="listproject();listmembers();save()" style="color:#1CE62A">{{abc.name}}</a></li>
+              <li ng-repeat="abc in codes" class="top-main-manue"><a href="#/view/project/{{abc.id}}/{{abc.sdate}}/{{abc.edate}}" ng-controller="updateController" ng-click="listproject();listmembers();save()" style="color:#1CE62A">{{abc.name}}</a></li>
             </ul>
           </li> 
           <li id="bar4"><a href="#/view/saveproject"><button type="button" class="btn btn-link btn-sm" style="color:#1CE62A;">Create Project</button></a></li>
@@ -101,7 +101,7 @@ window.onunload=function(){null};
                     controller: 'Controller',
                     templateUrl: "${resource(dir: 'gspPages', file: 'updateticket.gsp')}"
                 })
-              .when('/view/addmembers/:id',
+              .when('/view/addmembers/:id/:sdate/:edate',
               {
                     
                   controller: 'newController',
@@ -113,7 +113,7 @@ window.onunload=function(){null};
                   controller: 'newController',
                   templateUrl: "${resource(dir: 'gspPages', file: 'project.gsp')}"
               })
-              .when('/view/project/:id',
+              .when('/view/project/:id/:sdate/:edate',
               {
                     
                   controller: 'updateController',
@@ -125,7 +125,7 @@ window.onunload=function(){null};
                   controller: 'Controller',
                   templateUrl: "${resource(dir: 'gspPages', file: 'saveproject.gsp')}"
               })
-              .when('/view/saveticket/:id',
+              .when('/view/saveticket/:id/:sdate/:edate',
               {
                     
                   controller: 'Controller',
@@ -167,9 +167,9 @@ window.onunload=function(){null};
         return input.slice(start);
     }
 }); 
-     
-     
-     //<!-- newController -->  
+   //<!--end filter configuration-->  
+   
+    //<!-- newController -->  
      trac.controller("newController", function ($location,$routeParams,$scope,$http,flash)
       {
 
@@ -181,6 +181,8 @@ window.onunload=function(){null};
         {
           this.params=$routeParams
            $scope.code = this.params.id
+            $scope.sdate = this.params.sdate
+             $scope.edate = this.params.edate
         };
           $scope.addProjectMembers = function(code)//adding project members
               {
@@ -207,20 +209,14 @@ window.onunload=function(){null};
               };
      }); 
      //<!-- newController end -->
-   
-   
+     
      //<!-- updateController -->  
       trac.controller("updateController", function ($location,$routeParams,$scope,$http,flash)
       {
-
-         
-        
-        var sessionToken = document.getElementById("token").value;
-        
-        
-        $scope.getAllUsersForProjectId = function(id)//get users of a project
-        {
-          
+         var sessionToken = document.getElementById("token").value;
+      
+         $scope.getAllUsersForProjectId = function(id)//get users of a project
+         {
           var tempss = new Array()
           var varcount=0
           $http.get("/trac/getUsersForProjectId",{  params: { Id: id, token: sessionToken  }})
@@ -339,8 +335,6 @@ window.onunload=function(){null};
                               alert("Error"+data.response.error);
                     });
          }
-          
-
            $scope.updateProject = function()
         {
                     this.params = $routeParams;
@@ -515,16 +509,22 @@ window.onunload=function(){null};
          {
                     this.params = $routeParams;
                     $scope.id = this.params.id
+                    $scope.sdate = this.params.sdate
+                    $scope.edate = this.params.edate
          }
          $scope.saveTic=function() //returns project id
          {
                     this.params = $routeParams;
                     $scope.id = this.params.id
+                    $scope.sdate = this.params.sdate
+                    $scope.edate = this.params.edate
          }
          $scope.saveTicket = function() //save ticket method
          {
                     this.params = $routeParams;
                     $scope.id = this.params.id
+                    $scope.sdate = this.params.sdate
+                    $scope.edate = this.params.edate
                    var code=$scope.id
                     var manager2=document.getElementById("ticketstatus");
                     var status = manager2.options[manager2.selectedIndex].value;
@@ -539,7 +539,7 @@ window.onunload=function(){null};
                     {
                       if(data.response.code==200)
                         {
-                          $location.path("/view/project/"+$scope.id)
+                          $location.path("/view/project/"+$scope.id+"/"+$scope.sdate+"/"+$scope.edate)
                         }
                         else
                           {

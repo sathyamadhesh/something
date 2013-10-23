@@ -29,7 +29,7 @@
                               <p style="margin-left:3%">
                                     <button type="submit" class="btn btn-primary">SUBMIT
                                     </button>
-                                <a href="#/view/project/{{code}}"><button style="margin-left: 5%" type="button" class="btn btn-primary">CANCEL</button></a>
+                                <a href="#/view/project/{{code}}/{{sdate}}/{{edate}}"><button style="margin-left: 5%" type="button" class="btn btn-primary">CANCEL</button></a>
                               </p>
                       </form>
               </li> 
